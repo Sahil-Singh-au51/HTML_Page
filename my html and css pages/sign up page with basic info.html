@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sahil Singh's Sign Up page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightcyan;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            width: 50%;
+            margin: 0 auto;
+            text-align: left;
+            background-color: lightgreen;
+            border-radius: 25px;
+            padding: 20px;
+            box-shadow: 10px 5px 10px 5px #ddd;
+        }
+
+        label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        textarea {
+            width: 50%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 50%;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            width: 50%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            border: none;
+        }
+
+        .number {
+            background-color: green;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            display: inline-block;
+            text-align: center;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+    <form>
+        <h2>
+            <span class="number">1</span>Your Basic Info
+        </h2>
+        <div>
+            <label for="name">Name:</label>
+            <div>
+                <input type="text" id="name" name="name" required>
+            </div>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <div>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <div>
+                <input type="password" id="password" name="password" required>
+            </div>
+        </div>
+        <div>
+            <label for="age">Age:</label>
+            <div>
+                <input type="checkbox" id="under13" name="age" value="under13">
+                <label for="under13">Under 13</label>
+            </div>
+            <div>
+                <input type="checkbox" id="over13" name="age" value="over13">
+                <label for="over13">Over 13</label>
+            </div>
+        </div>
+        <h2>
+            <span class="number">2</span>Your Profile
+        </h2>
+        <div>
+            <label for="bio">Bio:</label>
+            <div>
+                <textarea id="bio" name="bio"></textarea>
+            </div>
+        </div>
+        <div>
+            <label for="job">Job Role:</label>
+            <div>
+                <select id="job" name="job">
+                    <optgroup label="Web">
+                        <option value="front-end">Front-end Developer</option>
+                        <option value="php">PHP Developer</option>
+                        <option value="python">Python Developer</option>
+                        <option value="rails">Rails Developer</option>
+                        <option value="web">Web Developer</option>
+                        <option value="wordpress">Wordpress Developer</option>
+                    </optgroup>
+                    <optgroup label="Mobile">
+                        <option value="android">Android Developer</option>
+                        <option value="ios">IOS Developer</option>
+                        <option value="mobile">Mobile Developer</option>
+                    </optgroup>
+                    <optgroup label="Business">
+                        <option value="business">Business Developer</option>
+                        <option value="freelancer">Freelancer</option>
+                    </optgroup>
+                </select>
+            </div>
+        </div>
+
+        </div>
+        <div>
+            <label>Interests:</label>
+            <div>
+                <input type="checkbox" id="development" name="interests" value="development">
+                <label for="development">Development</label>
+            </div>
+            <div>
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">Design</label>
+            </div>
+            <div>
+                <input type="checkbox" id="business" name="interests" value="business">
+                <label for=" business">Business</label>
+            </div>
+        </div>
+        <div>
+            <input type="submit" value="Sign Up">
+
+        </div>
+    </form>
+</body>
+
+</html>
