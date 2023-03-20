@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    /* color: blue; */
+    /* color: rgb(211, 143, 52); */
+    color: #4287f5;
+    /* background-color: azure; */
+    /* background-color: rgb(134, 38, 151); */
+    background-color: #c1d0e8;
+}
